@@ -3,23 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Michroma", sans-serif;
     background-color: #000;
     margin: 0 auto;
     color: #f2f2f2;
 
-    header { 
-        border-bottom: rgb(169,169,169,0.3) 1px solid;
-        & .menu{
-            display:flex;
+    header {
+        border-bottom: rgb(169, 169, 169, 0.3) 1px solid;
+
+        & .menu {
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 30px;
             padding: 20px 0;
             margin-bottom: 25px;
-            
+
             & .lista {
                 display: flex;
                 flex-direction: column;
@@ -38,19 +40,21 @@ body {
 
                     & a {
                         text-decoration: none;
-                        color:#f2f2f2;
+                        color: #f2f2f2;
                         font-size: 1.2rem;
                         font-weight: bold;
                         transition: 0.3s;
                     }
+
                     & :hover {
-                        color:#0000CD;
+                        color: #0000CD;
                     }
                 }
 
-            }            
+            }
         }
     }
+
     main {
         display: flex;
         flex-direction: column;
@@ -64,22 +68,25 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             & .titulo {
                 font-size: 2.0rem;
                 text-align: center;
                 margin-bottom: 20px;
                 font-weight: 200;
                 letter-spacing: -2px;
-                
+
                 & span {
-                color: #0000CD;
-                font-weight: bold;
+                    color: #0000CD;
+                    font-weight: bold;
                 }
             }
+
             & .paragrafo {
                 font-size: 1rem;
                 margin: 20px 20px;
             }
+
             & .botao {
                 width: 12rem;
                 text-align: center;
@@ -93,30 +100,32 @@ body {
                 margin-left: 20px;
                 transition: 0.3s;
                 cursor: pointer;
+
                 &:hover {
                     background-color: #1C1C1C;
                     border: 3px solid #0000CD;
                     color: #f2f2f2;
                 }
-            
             }
         }
-        & .sesoes {
 
-            & .subtitulo{
+        & .sesoes {
+            width: 100%;
+
+            & .subtitulo {
                 width: 4.5rem;
                 font-size: 1.5rem;
                 margin-bottom: 20px;
                 font-weight: bold;
                 border-bottom: #0000CD 5px solid;
                 padding-bottom: 07px;
+                margin-left: 2rem;
             }
         }
-        & #projetos {
-            width: 100%;
 
+        & #projetos {
             & .grade-projetos {
-                display:flex;
+                display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 20px;
@@ -129,11 +138,69 @@ body {
                     overflow: hidden;
                     width: 290px;
                     height: 300px;
+
+                    & .img-projeto {
+                        width: 290px;
+                        height: 150px;
+                        object-fit: cover;
+                        overflow: hidden;
+                        border-bottom: #0000CD 2px solid;
+
+                        /*Nome do projeto*/
+
+                        /* Inicio Descrição projeto*/
+
+                    }
+                }
+
+                & div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & .botao-projeto {
+                        width: 12rem;
+                        margin-top: 10px;
+                        text-align: center;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        border: 1px solid #f2f2f2;
+                        background-color: #0000CD;
+                        color: #f2f2f2;
+                        transition: 0.3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #1C1C1C;
+                            border: 3px solid #0000CD;
+                            color: #f2f2f2;
+                        }
+                    }
+                }
+            }
+        }
+
+        & #sobre {
+            & .sobre {
+                display: flex;
+                gap: 50px;
+                margin: 20px;
+                align-items: center;
+
+                
+                & img {
+                    max-width: 50%;
+                    height: auto;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                
+                & p {
+                    max-width: 70%;
                 }
             }
         }
     }
 }
-
-
-
