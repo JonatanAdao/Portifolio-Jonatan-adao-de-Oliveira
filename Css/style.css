@@ -123,28 +123,34 @@ body {
             }
         }
 
-        & #projetos {
+        & #projetos {            
+            border-bottom: #708090 2px solid;
+            
             & .grade-projetos {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 20px;
-                margin: 20px 0;
+                margin: 20px ;
+                ;   
 
                 & .card-projeto {
                     background: #708090;
-                    border: #0000CD 2px solid;
+                    
                     border-radius: 5px;
                     overflow: hidden;
                     width: 290px;
                     height: 300px;
+                    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 
                     & .img-projeto {
                         width: 290px;
                         height: 150px;
                         object-fit: cover;
                         overflow: hidden;
-                        border-bottom: #0000CD 2px solid;
+                        border-bottom: #fff 2px solid;
+                        box-shadow: 0 0 15px rgba(255, 255,255, 0.8);
+                        
 
                         /*Nome do projeto*/
 
@@ -195,6 +201,8 @@ body {
                     height: auto;
                     border-radius: 50%;
                     object-fit: cover;
+                    box-shadow: 0 0 25px rgba(255, 255,255, 0.8);
+                    width: 300px;
                 }
                 
                 & p {
@@ -202,5 +210,59 @@ body {
                 }
             }
         }
+
+        & #contato {
+            & form {
+                background: #708090;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(255, 255,255, 0.8);
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                margin: 6rem auto;
+                
+                & input, textarea {
+                    margin-top: 5px;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    width: 100%;
+                }
+                & textarea {
+                    resize: none;
+                    height: 80px;
+                }
+                & button {
+                    font-family: 'Michroma', sans-serif;
+                    letter-spacing: 1px;
+                    margin-top: 15px;
+                    padding: 10px;
+                    background: #708090;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border: solid 1px #f2f2f2;
+                    transition: 0.3s;
+                }
+                & button:hover {
+                    background: #0000CD;
+                }
+            }
+        }
+    }
+
+    footer {
+        width: auto;
+        font-size: 10px;
+        text-align: center;
+        padding: 15px;
+        border-top: solid 1px #f2f2f2;
+        box-shadow: 0 0 10px rgba(255, 255,255, 0.8);
+        
+
     }
 }

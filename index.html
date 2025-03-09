@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Jonatan Adão de Oliveira</title>
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
@@ -55,7 +56,7 @@
                     </div>
 
                     <div>
-                        <div class="card-projeto">
+                        <!--<div class="card-projeto">
                             <img src="img/projeto3.jpg" class="img-projeto" alt="Projeto 3">
                             <div class="info-projeto">
                                 <h3>Projeto 3</h3>
@@ -63,7 +64,7 @@
                             </div>
                         </div>
                         <a href="#" class="botao-projeto">Ver Projeto</a> 
-                    </div>
+                    </div>-->
                 </section>
             </section>
             <section id="sobre" class="sesoes">
@@ -75,10 +76,13 @@
             </section>
             <section id="contato" class="sesoes">
                 <h2 class="subtitulo">Contato</h2>
-                <form>
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Mensagem"></textarea>
+                <form onsubmit="sendToWhatsApp(event)">
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+
+                    <input type="email" id="email" name="email" placeholder="Digite seu Email">
+
+                    <textarea id="mensagem" name="mensagem" placeholder=" Digite sua Mensagem"></textarea>
+
                     <button type="submit">Enviar</button>
                 </form>
             </section>
@@ -86,5 +90,6 @@
     <footer>
         <p> © 2025-Desenvolvido por Jonatan Adão de Oliveira</p>
     </footer>    
+    <script  src=""></script>
 </body>
 </html>
