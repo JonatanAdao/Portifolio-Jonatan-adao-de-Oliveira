@@ -144,23 +144,31 @@ body {
                     background: #708090;
                     border-radius: 5px;
                     overflow: hidden;
+                    max-width: 300px;
                     width: 100%;
-                    height: 300px;
+                    height: 400px;
                     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 
                     & .img-projeto {
-                        width: 290px;
+                        width: 100%;
                         height: 150px;
                         object-fit: cover;
                         overflow: hidden;
                         border-bottom: #fff 2px solid;
                         box-shadow: 0 0 15px rgba(255, 255,255, 0.8);
                         
+                    }
+                    & .info-projeto h3 {
+                        font-size:1rem;
+                        text-align: center;
+                        padding: 20px auto;
+                        margin: 10px 30px; 
+                    }
 
-                        /*Nome do projeto*/
-
-                        /* Inicio Descrição projeto*/
-
+                    & .info-projeto p {
+                        font-size: 0.8rem;
+                        text-align: center;
+                        margin: 10px;
                     }
                 }
 
